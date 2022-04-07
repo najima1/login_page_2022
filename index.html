@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/de028bc26c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Cabin:ital,wght@0,400;1,400;1,500;1,600&family=Inspiration&family=Lato:ital,wght@0,300;1,400&family=Lobster&family=Open+Sans:ital,wght@0,400;1,300;1,400&family=Oswald:wght@300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;1,200;1,300&family=Roboto+Condensed:ital,wght@0,400;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300&family=Rubik+Puddles&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body>
+    <section
+      class="bg-no-repeat bg-cover bg-center flex items-center justify-center h-screen bg-gray-100"
+    >
+      <div class="container">
+        <div class="login_wraper" style="background-image: url(image/wave.svg)">
+          <!-- left image animation -->
+          <div class="image_left_ani hidden md:inline-flex mx-auto">
+            <div>
+              <img src="image/Globalization.gif" alt="" class="w-[450px]" />
+              <h1 class="py-5 font-serif text-xl">
+                Your <span class="text-2xl text-[#e84393]">Headline</span> gose
+                here
+              </h1>
+            </div>
+          </div>
+
+          <!-- main login form right -->
+          <div class="login_form py-5 b_shadow p-8 mx-auto">
+            <div>
+              <div class="h_image">
+                <img src="image/boy.png" alt="" class="w-12" />
+              </div>
+
+              <div
+                class="h_text text-center py-3 font-serif text-xl capitalize"
+              >
+                <p class="block">
+                  Welcome <span class="text-[#e84393]">To web community!</span>
+                </p>
+              </div>
+            </div>
+
+            <!-- forms -->
+            <form action="#" id="form" class="space-y-3">
+              <!-- email -->
+              <div class="relative">
+                <label for="email" class="block font-semibold">Email</label>
+                <input
+                  autocomplete="off"
+                  type="email"
+                  placeholder="email"
+                  id="email"
+                  class="focus:outline-none border-none bg-gray-200 py-2 pl-10 w-80 rounded-sm font-serif"
+                />
+
+                <span class="email_success block"></span>
+                <span class="email_error text-[#fd79a8] block"></span>
+                <i
+                  class="fas fa-user absolute top-7 left-2 text-xl text-teal-500"
+                ></i>
+              </div>
+
+              <!-- password -->
+              <div class="relative">
+                <label for="password" class="block font-semibold"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  placeholder="password"
+                  id="password"
+                  class="focus:outline-none border-none bg-gray-200 py-2 pl-10 w-80 rounded-sm font-serif"
+                />
+                <span class="password_success block"></span>
+                <span class="password_error text-[#fd79a8] block"></span>
+                <i
+                  class="fas fa-lock absolute top-7 left-2 text-xl text-teal-500"
+                ></i>
+              </div>
+
+              <!-- checkbox -->
+              <div class="check_box flex items-center justify-between gap-x-3">
+                <div class="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    class="check_input focus:ring-0 text-orange-400"
+                  />
+                  <span class="font-serif">Password show / hide</span>
+                </div>
+
+                <span
+                  class="font-serif text-[#596275] underline underline-offset-1"
+                  >Forgot password</span
+                >
+              </div>
+
+              <!-- sing up btn -->
+              <button type="button " class="sing_in_btn hover:bg-indigo-500">
+                Sign In
+              </button>
+
+              <!-- singn in with google -->
+              <div class="google_sing_in">
+                <span class="block text-center mb-3 text-indigo-600 font-serif"
+                  >OR</span
+                >
+                <button
+                  type="button "
+                  class="w-full bg-[#e84393] block py-1 font-serif text-white rounded-sm"
+                >
+                  <i class="fab fa-google-plus mr-2 text-white"></i>
+                  Sign in with Google
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="main_js/index.js"></script>
+  </body>
+</html>
