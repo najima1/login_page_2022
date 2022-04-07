@@ -14,7 +14,7 @@
   }
 
   .login_wraper {
-    @apply flex items-center justify-center gap-4 bg-white box-border p-10 b_shadow bg-no-repeat bg-center bg-cover;
+    @apply flex items-center justify-center gap-4 bg-white box-border p-10 md:b_shadow bg-no-repeat bg-center bg-cover;
   }
 
   .h_image {
